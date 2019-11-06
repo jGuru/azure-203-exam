@@ -1,5 +1,0 @@
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-template-deploy-cli
-
-az group deployment create --resource-group <resource-group-name> --template-file <path-to-template>
-
-https://github.com/Azure-Samples/active-directory-java-native-headless/blob/master/AppCreationScripts/AppCreationScripts.md
