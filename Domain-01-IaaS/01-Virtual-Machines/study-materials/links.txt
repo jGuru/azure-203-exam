@@ -1,0 +1,1 @@
+https://github.com/MicrosoftDocs/azure-docs/tree/master/articles/virtual-machines/scripts
