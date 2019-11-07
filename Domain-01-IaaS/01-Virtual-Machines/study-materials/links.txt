@@ -1,1 +1,2 @@
 https://github.com/MicrosoftDocs/azure-docs/tree/master/articles/virtual-machines/scripts
+https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/
