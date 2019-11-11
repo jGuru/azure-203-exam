@@ -1,0 +1,18 @@
+In order to run this spring application on command line use following command
+
+java -jar course-api.jar --JDBC_URL="your DB jdbc url" --MYSQL_DB_USERNAME=mysql user name , --MYSQL_DB_PASSWORD=mysql password 
+if you are using eclise then make sure you add these as environment variable in run configurations.
+
+
+To build the application from maven
+use
+mvn -q clean
+mvn -q package
+
+to run from docker 
+docker run -t -p 8080:8080 -p 3307:3306 --env-file settings.properties --name mycontainer1 abootapp:v1
+
+put your image id and tag
+or pull the docker image using below command
+docker pull neerajraja2001/test:springbootapp
+
