@@ -20,9 +20,9 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@GetMapping("/{id}")
-	public User getUser(@PathVariable Integer id) {
-		return userService.getUser(id);
+	@GetMapping("/{emailId}")
+	public User getUser(@PathVariable String emailId) {
+		return userService.getUser(emailId);
 	}
 
 	@PostMapping
@@ -35,9 +35,9 @@ public class UserController {
 		userService.updateUser(user);
 	}
 
-	@DeleteMapping(value = "/{id}")
-	public void deleteUser(@PathVariable Integer id) {
-		userService.deleteUser(id);
+	@DeleteMapping(value = "/{emailId}")
+	public void deleteUser(@PathVariable String emailId) {
+		userService.deleteUser(emailId);
 	}
 
 }

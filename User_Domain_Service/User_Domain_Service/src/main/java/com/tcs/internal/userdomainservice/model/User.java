@@ -7,27 +7,28 @@ import javax.persistence.Id;
 public class User {
 
 	@Id
-	private Integer id;
+	private String emailId;
 	private String name;
 	private String surname;
+	private String password; // Plain password as of now so not encrypting it
 
 	public User() {
 
 	}
 
-	public User(Integer id, String name, String surname) {
+	public User(String emailId, String name, String surname) {
 		super();
-		this.id = id;
+		this.emailId = emailId;
 		this.name = name;
 		this.surname = surname;
 	}
 
-	public Integer getId() {
-		return id;
+	public String getEmailId() {
+		return emailId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
 	}
 
 	public String getName() {
@@ -46,8 +47,16 @@ public class User {
 		this.surname = surname;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String toString() {
-		return id + " : " + name + " : " + surname;
+		return name + " : " + surname + " : " + emailId;
 	}
 
 }

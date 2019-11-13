@@ -13,8 +13,8 @@ public class UserService {
 	@Autowired
 	private UserRepository userRepository;
 
-	public void deleteUser(Integer id) {
-		userRepository.deleteById(id);
+	public void deleteUser(String emailId) {
+		userRepository.deleteById(emailId);
 	}
 
 	public void addUser(User user) {
@@ -25,9 +25,9 @@ public class UserService {
 		userRepository.save(user);
 	}
 
-	public User getUser(Integer id) {
+	public User getUser(String emailId) {
 		
-		Optional<User>user= userRepository.findById(id);
+		Optional<User>user= userRepository.findById(emailId);
 		return user.get();
 	}
 
